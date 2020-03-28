@@ -32,7 +32,7 @@ using System;
 
 namespace ex9
 {
-    class Program
+    class ex9  // class name should match filename
     {
         static void Main(string[] args)
         {
