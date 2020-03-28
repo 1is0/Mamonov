@@ -12,9 +12,9 @@ namespace ex6
             for(int i = 0; i < s.Length; i++)
             {
                 int index = num.Next(0, s.Length);
-                char vo_vrema = s[index];
+                char temp = s[index]; //following the codestyles
                 s[index] = s[i];
-                s[i] = vo_vrema;
+                s[i] = temp;
             }
             Console.WriteLine(s);
             Console.ReadKey();
