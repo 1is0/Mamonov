@@ -12,7 +12,7 @@ namespace ex6
             for(int i = 0; i < s.Length; i++)
             {
                 int index = num.Next(0, s.Length);
-                char temp = s[index]; //following the codestyles
+                char temp = s[index];  //following the codestyles
                 s[index] = s[i];
                 s[i] = temp;
             }
