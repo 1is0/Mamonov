@@ -32,7 +32,7 @@ using System;
 
 namespace ex1
 {
-    class Program
+    class Ex1
     {
         static void Main(string[] args)
         {
