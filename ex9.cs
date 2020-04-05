@@ -1,4 +1,4 @@
-﻿/*
+/*
  * Copyright (c) 2020 Andrey Mamonov
  * 
  * Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -32,21 +32,44 @@ using System;
 
 namespace ex9
 {
-    class ex9  // class name should match filename
+    class Ex9  // class name should match filename
     {
         static void Main(string[] args)
         {
             Random num = new Random();
-            for (int i = 0; i < num.Next(1, 5); i++)
+            char[] s = new char[4];
+            bool flag;
+            while (true)
             {
-                Console.Write(Convert.ToChar(CallNum(num)));
-            }
-            Console.Write("\n");
+                for (int i = 0; i < 4; i++)
+                {
+                    s[i] = Convert.ToChar(CallNum(num));
+                    if (s[i] == 123)
+                        s[i] = ' ';
+                    //Console.Write(Convert.ToChar(CallNum(num)));
+                }
+                flag = true;
+                for(int i = 0; i < 3; i++)
+                {
+                    if (s[i] == ' ' && s[i + 1] != ' ')
+                    {
+                        flag = false;
+                        break;
+                    }
+                }
+                if (flag == false)
+                    continue;
+                if (s[0] == ' ')
+                    continue;
+                break;
+            }           
+            for (int i = 0; i != ' ' && i < 4; i++)
+                Console.Write(s[i]);
             Console.ReadKey();
         }
         static int CallNum(Random num)
         {
-            return num.Next(97, 123);
+            return num.Next(97, 124);
         }
     }
 }
