@@ -46,7 +46,6 @@ namespace ex9
                     s[i] = Convert.ToChar(CallNum(num));
                     if (s[i] == 123)
                         s[i] = ' ';
-                    //Console.Write(Convert.ToChar(CallNum(num)));
                 }
                 flag = true;
                 for(int i = 0; i < 3; i++)
