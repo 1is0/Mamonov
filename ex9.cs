@@ -45,7 +45,9 @@ namespace ex9
                 {
                     s[i] = Convert.ToChar(CallNum(num));
                     if (s[i] == 123)
+                    {
                         s[i] = ' ';
+                    }
                 }
                 flag = true;
                 for(int i = 0; i < 3; i++)
@@ -57,13 +59,19 @@ namespace ex9
                     }
                 }
                 if (flag == false)
+                {
                     continue;
+                }
                 if (s[0] == ' ')
+                {
                     continue;
+                }
                 break;
             }           
             for (int i = 0; i != ' ' && i < 4; i++)
+            {
                 Console.Write(s[i]);
+            }
             Console.ReadKey();
         }
         static int CallNum(Random num)
