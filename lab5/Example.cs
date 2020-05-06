@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace CSlab3
 {
@@ -18,7 +18,7 @@ namespace CSlab3
             Console.WriteLine(ReferenceEquals(c, shallowCopy));  //false, ref !=
             Console.WriteLine(ReferenceEquals(c, deepCopy));  //false, ref !=
             c.Age = 18;
-            Console.WriteLine(c.Equals(shallowCopy));  //true, because shallow copy can see only references, but data inside can not
+            Console.WriteLine(c.Equals(shallowCopy));  //false
             Console.WriteLine(c.Equals(deepCopy));  //false
             Console.WriteLine(c.GetHashCode());
             Console.WriteLine();
