@@ -30,7 +30,7 @@ namespace CSlab3
 
         public string ToCry()
         {
-            return "{0} is crying!!!", Name;
+            return $"{Name} is crying!!!";
         }
     }
 }
