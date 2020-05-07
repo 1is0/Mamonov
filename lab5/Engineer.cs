@@ -30,7 +30,7 @@ namespace CSlab3
 
         public string ToRepairUniversity()
         {
-            return "{0} is repairing university!!!", Name;
+            return $"{Name} is repairing university!!!";
         }
     }
 }
