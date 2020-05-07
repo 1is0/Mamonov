@@ -32,9 +32,9 @@ namespace CSlab3
             b.Skill = temp;
         }
 
-        public void ToWork()
+        public string ToWork()
         {
-            Console.WriteLine("{0} is repairing university!!!", Name);
+            return $"{Name} is repairing university!!!";
         }
 
         public override bool Equals(object obj)

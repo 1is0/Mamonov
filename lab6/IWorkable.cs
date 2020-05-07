@@ -10,6 +10,6 @@
 
         bool Equals(object obj);
 
-        void ToWork();
+        string ToWork();
     }
 }

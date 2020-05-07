@@ -32,9 +32,9 @@ namespace CSlab3
             b.Mark = temp;
         }
 
-        public void ToWork()
+        public string ToWork()
         {
-            Console.WriteLine("{0} is counting!!!", Name);
+            return $"{Name} is counting!!!";
         }
 
         public override bool Equals(object obj)

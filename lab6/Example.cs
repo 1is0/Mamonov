@@ -37,7 +37,7 @@ namespace CSlab3
             Economist.SwapMarks(e, f);
             Console.WriteLine(e);
             Console.WriteLine(f);
-            e.ToWork();
+            Console.WriteLine(e.ToWork());
             Console.WriteLine();
 
             var g = new Engineer(list[1], 6);
@@ -45,7 +45,7 @@ namespace CSlab3
             Engineer.SwapSkills(g, h);
             Console.WriteLine(g);
             Console.WriteLine(h);
-            g.ToWork();
+            Console.WriteLine(g.ToWork());
             Console.WriteLine();
 
             var i = new Programmer<int>(list[1], "blue");
@@ -57,7 +57,7 @@ namespace CSlab3
 
             Console.WriteLine(i);
             Console.WriteLine(o);
-            i.ToWork();
+            Console.WriteLine(i.ToWork());
             Console.WriteLine();
 
             Console.WriteLine(i.Major);

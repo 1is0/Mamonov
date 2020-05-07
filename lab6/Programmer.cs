@@ -32,9 +32,9 @@ namespace CSlab3
             b.GitHubLogin = temp;
         }
 
-        public void ToWork()
+        public string ToWork()
         {
-            Console.WriteLine("{0} is learning c#!!!", Name);
+            return $"{Name} is learning c#!!!";
         }
 
         public override bool Equals(object obj)
