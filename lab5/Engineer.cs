@@ -28,9 +28,9 @@ namespace CSlab3
             b.Skill = temp;
         }
 
-        public void ToRepairUniversity()
+        public string ToRepairUniversity()
         {
-            Console.WriteLine("{0} is repairing university!!!", Name);
+            return "{0} is repairing university!!!", Name;
         }
     }
 }
