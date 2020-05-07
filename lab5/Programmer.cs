@@ -29,9 +29,9 @@ namespace CSlab3
             b.GitHubLogin = temp;
         }
 
-        public void ToLearnCSharp()
+        public string ToLearnCSharp()
         {
-            Console.WriteLine("{0} is learning c#!!!", Name);
+            return $"{Name} is learning c#!!!";
         }
     }
 }
