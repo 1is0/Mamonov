@@ -34,7 +34,7 @@ namespace CSlab3
 
         public string ToWork()
         {
-            return "{0} is working!!!", Data.Name;
+            return $"{Data.Name} is working!!!";
         }
     }
 }
