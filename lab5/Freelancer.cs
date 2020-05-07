@@ -32,9 +32,9 @@ namespace CSlab3
             b.CurrentWork = temp;
         }
 
-        public void ToWork()
+        public string ToWork()
         {
-            Console.WriteLine("{0} is working!!!", Data.Name);
+            return "{0} is working!!!", Data.Name;
         }
     }
 }
