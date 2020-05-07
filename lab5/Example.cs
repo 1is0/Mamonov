@@ -37,7 +37,7 @@ namespace CSlab3
             Economist.SwapMarks(e, f);
             Console.WriteLine(e);
             Console.WriteLine(f);
-            e.ToCry();
+            Console.WriteLine(e.ToCry());
             Console.WriteLine();
 
             var g = new Engineer(list[1], 6);
@@ -45,7 +45,7 @@ namespace CSlab3
             Engineer.SwapSkills(g, h);
             Console.WriteLine(g);
             Console.WriteLine(h);
-            g.ToRepairUniversity();
+            Console.WriteLine(g.ToRepairUniversity());
             Console.WriteLine();
 
             var i = new Programmer(list[1], "blue");
@@ -53,7 +53,7 @@ namespace CSlab3
             Programmer.SwapGitHubLogins(i, o);
             Console.WriteLine(i);
             Console.WriteLine(o);
-            i.ToLearnCSharp();
+            Console.WriteLine(i.ToLearnCSharp());
             Console.WriteLine();
 
             Console.WriteLine(i.Major);
