@@ -28,9 +28,9 @@ namespace CSlab3
             b.Mark = temp;
         }
 
-        public void ToCry()
+        public string ToCry()
         {
-            Console.WriteLine("{0} is crying!!!", Name);
+            return "{0} is crying!!!", Name;
         }
     }
 }
