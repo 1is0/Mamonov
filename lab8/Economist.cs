@@ -1,4 +1,4 @@
-namespace CSlab3
+﻿namespace CSlab3
 {
     sealed class Economist : Student, IWorkable
     {
