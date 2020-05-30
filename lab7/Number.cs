@@ -2,7 +2,7 @@
 
 namespace CSLab7
 {
-    class Number : IEquatable<Number>
+    class Number : IComparable<Number>
     {
         private int N { get; set; }
         private int M { get; set; }
@@ -140,10 +140,10 @@ namespace CSLab7
         }
         public static bool operator ==(Number a, Number b) => a.Equals((object)b);
         public static bool operator !=(Number a, Number b) => !(a.Equals((object)b));
-        public static bool operator >(Number a, Number b) => ((IEquatable < Number > )a).IsBigger(b);
-        public static bool operator <(Number a, Number b) => ((IEquatable<Number>)b).IsBigger(a);
-        public static bool operator >=(Number a, Number b) => ((IEquatable<Number>)a).IsBigger(b) || a.Equals(b);
-        public static bool operator <=(Number a, Number b) => ((IEquatable<Number>)b).IsBigger(a) || b.Equals(a);
+        public static bool operator >(Number a, Number b) => ((IComparable<Number>)a).CompareTo(b) == 1;
+        public static bool operator <(Number a, Number b) => ((IComparable<Number>)b).CompareTo(a) == 1;
+        public static bool operator >=(Number a, Number b) => ((IComparable<Number>)a).CompareTo(b) == 1 || a.Equals(b);
+        public static bool operator <=(Number a, Number b) => ((IComparable<Number>)b).CompareTo(a) == 1 || b.Equals(a);
 
         public string DoubleView()
         {
@@ -188,9 +188,9 @@ namespace CSLab7
         }
 
 
-        bool IEquatable<Number>.IsBigger(Number a)
+        int IComparable<Number>.CompareTo(Number obj)
         {
-            return ToSingle() > a.ToSingle() ? true : false;
+            return ToSingle() > obj.ToSingle() ? 1 : 0;
         }
         private float ToSingle()
         {
